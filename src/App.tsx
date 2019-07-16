@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { ReactElement } from 'react'
+import { Route, Switch } from 'wouter'
 
-const App: React.FC = () => {
+import CreateLink from 'components/CreateLink'
+import Header from 'components/Header'
+import LinkList from 'components/LinkList'
+
+function App (): ReactElement {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='center w85'>
+      <Header />
+      <div className='ph3 pv1 background-gray'>
+        <Switch>
+          <Route path='/create' component={CreateLink} />
+          <Route path='/' component={LinkList} />
+        </Switch>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
