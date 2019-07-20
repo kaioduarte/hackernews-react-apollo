@@ -32,5 +32,8 @@ module.exports = {
     'import/resolver': {
       typescript: {},
     },
+  },
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off'
   }
 }
