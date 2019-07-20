@@ -7,6 +7,7 @@ The code is based on a [HowToGraphQL's tutorial](https://www.howtographql.com/re
 - React + Typescript
 - Hooks!
 - [Wouter](https://github.com/molefrog/wouter) for routing instead of react-router/react-router-dom
+- [IDB-Keyval](https://github.com/jakearchibald/idb-keyval) for local storage instead of LocalStorage
 
 :books: Stack:
 - React
